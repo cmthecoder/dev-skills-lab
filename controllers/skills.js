@@ -25,20 +25,20 @@ function create(req, res){
   })
   .catch(error => {
     console.log(error)
-    res.redirect('/skills')
+    res.redirect('/')
   })
 }
 
 function show(req, res){
   Skill.findById(req.params.id)
-  .then(todo => {
+  .then(skill => {
     res.render('skills/show', {
       skill: skill
     })
   })
   .catch(error => {
     console.log(error)
-    res.redirect('/skills')
+    res.redirect('/')
   })
 }
 
