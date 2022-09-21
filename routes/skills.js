@@ -1,4 +1,6 @@
 import { Router } from 'express'
+import { skills } from '../data/skills-data.js'
+
 
 const router = Router()
 
