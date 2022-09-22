@@ -43,7 +43,9 @@ function show(req, res){
   })
 }
 
-
+function deleteSkill(req, res) {
+  
+}
 
 export{
   index,
