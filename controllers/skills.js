@@ -60,10 +60,10 @@ function edit(req,res) {
     res.render('skills/edit', {
       skill: skill
     })
-    .catch(error => {
-      console.log(error)
-      res.redirect('/skills')
-    })
+  })
+  .catch(error => {
+    console.log(error)
+    res.redirect('/skills')
   })
 }
 
